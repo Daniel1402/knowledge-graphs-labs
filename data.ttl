@@ -1,0 +1,17 @@
+@prefix vocab: <http://rdf.ontology2.com/vocab#>.
+@prefix vocab: <https://daniel1402.github.io/knowledge-graphs-labs/vocab#> .
+@prefix data: <https://daniel1402.github.io/knowledge-graphs-labs/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+data:Daniel a vocab:Student ;
+    vocab:name "Daniel Kirste"^^xsd:string ;
+    vocab:email "daniel.kirste@ugent.be"^^xsd:string ;
+    vocab:studentID "1234567"^^xsd:integer ;
+    vocab:attends data:KnowledgeGraphs ;
+    vocab:born "2000-01-01"^^xsd:date ;
+    vocab:knows data:Alice, data:Bob .
+
+data:KnowledgeGraphs a vocab:Course .
+data:Alice a vocab:Student .
+data:Bob a vocab:Student .
