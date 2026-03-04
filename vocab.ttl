@@ -1,0 +1,55 @@
+@prefix pgs: <https://https://github.com/Daniel1402/knowledge-graphs-labs/settings/pages> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+pgs:Person a rdf:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "A individual human being."@en .
+
+pgs:Student a rdf:Class ;
+    rdfs:label "Student"@en ;
+    rdfs:comment "A person who is enrolled at a university."@en ;
+    rdfs:subClassOf pgs:Person .
+
+pgs:Course a rdf:Class ;
+    rdfs:label "Course"@en ;
+    rdfs:comment "A university course."@en .
+
+pgs:name a rdf:Property ;
+    rdfs:label "name"@en ;
+    rdfs:comment "The full name or abbreviated name of a person." ;
+    rdfs:domain pgs:Person ;
+    rdfs:range xsd:string .
+
+pgs:studentID a rdf:Property ;
+    rdfs:label "studentID"@en ;
+    rdfs:comment "The unique identifier for a student."@en ;
+    rdfs:domain pgs:Student ;
+    rdfs:range xsd:integer .
+
+pgs:email a rdf:Property ;
+    rdfs:label "email"@en ;
+    rdfs:comment "The email address of a person."@en ;
+    rdfs:domain pgs:Person ;
+    rdfs:range xsd:string .
+
+pgs:attends a rdf:Property ;
+    rdfs:label "attends"@en ;
+    rdfs:comment "The course that a student attends."@en ;
+    rdfs:domain pgs:Student ;
+    rdfs:range pgs:Course .
+
+pgs:born a rdf:Property ;
+    rdfs:label "born"@en ;
+    rdfs:comment "The date a person is born"@en ;
+    rdfs:domain pgs:Person ;
+    rdfs:range xsd:date .
+
+pgs:knows a rdf:Property ;
+    rdfs:label "knows"@en ;
+    rdfs:comment "Indicates that one person knows another person"@en ;
+    rdfs:domain pgs:Person ;
+    rdfs:range pgs:Person .
+
+
