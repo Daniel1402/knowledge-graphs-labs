@@ -10,6 +10,6 @@ data:me a vocab:Student ;
     vocab:attends data:KnowledgeGraphs ;
     vocab:born "2000-01-01"^^xsd:date ;
     vocab:knows <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#jana>,
-                <https://federickds.github.io/knowledge_graphs/data.ttl>.
+                <https://federickds.github.io/knowledge_graphs/data.ttl#me>.
 
 data:KnowledgeGraphs a vocab:Course .
