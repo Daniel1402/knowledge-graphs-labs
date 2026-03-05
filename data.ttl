@@ -9,8 +9,7 @@ data:me a vocab:Student ;
     vocab:studentID "1234567"^^xsd:integer ;
     vocab:attends data:KnowledgeGraphs ;
     vocab:born "2000-01-01"^^xsd:date ;
-    vocab:knows data:Alice, data:Bob .
+    vocab:knows <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#jana>,
+                <https://federickds.github.io/knowledge_graphs/data.ttl>.
 
 data:KnowledgeGraphs a vocab:Course .
-data:Alice a vocab:Student .
-data:Bob a vocab:Student .
