@@ -1,5 +1,5 @@
-@prefix vocab: <https://daniel1402.github.io/knowledge-graphs-labs/vocab#> .
-@prefix data: <https://daniel1402.github.io/knowledge-graphs-labs/data#> .
+@prefix vocab: <https://daniel1402.github.io/knowledge-graphs-labs/vocab.ttl#> .
+@prefix data: <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
