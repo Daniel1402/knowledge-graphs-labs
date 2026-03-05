@@ -1,4 +1,3 @@
-@prefix vocab: <http://rdf.ontology2.com/vocab#>.
 @prefix vocab: <https://daniel1402.github.io/knowledge-graphs-labs/vocab#> .
 @prefix data: <https://daniel1402.github.io/knowledge-graphs-labs/data#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
