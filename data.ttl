@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
-data:Daniel a vocab:Student ;
+data:me a vocab:Student ;
     vocab:name "Daniel Kirste"^^xsd:string ;
     vocab:email "daniel.kirste@ugent.be"^^xsd:string ;
     vocab:studentID "1234567"^^xsd:integer ;
