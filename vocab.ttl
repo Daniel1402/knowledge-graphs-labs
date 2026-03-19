@@ -2,6 +2,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 pgs:Person a rdf:Class ;
     rdfs:label "Person"@en ;
@@ -86,3 +87,14 @@ pgs:takenAt a rdf:Property ;
     rdfs:comment "The location where the image was taken"@en ;
     rdfs:domain pgs:Image ;
     rdfs:range xsd:string .
+
+pgs:Person rdfs:subClassOf foaf:Person .
+pgs:Student rdfs:subClassOf foaf:Person .
+pgs:Image rdfs:subClassOf foaf:Image .
+
+pgs:name rdfs:subPropertyOf foaf:name .
+pgs:email rdfs:subPropertyOf foaf:mbox .
+pgs:depicts rdfs:subPropertyOf foaf:depicts .
+pgs:knows rdfs:subPropertyOf foaf:knows .
+pgs:creator rdfs:subPropertyOf foaf:maker .
+pgs:title rdfs:subPropertyOf foaf:title .
