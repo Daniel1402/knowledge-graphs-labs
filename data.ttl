@@ -1,3 +1,4 @@
+@prefix vocab: <http://rdf.ontology2.com/vocab#>.
 @prefix vocab: <https://daniel1402.github.io/knowledge-graphs-labs/vocab.ttl#> .
 @prefix data: <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -43,5 +44,8 @@ data:myMom a vocab:Person .
 data:myDad a vocab:Person .
 data:myBrother a vocab:Student .
 
-data:starPhotographer a vocab:Person .
+data:starPhotographer a vocab:Person ;
+    vocab:name "Star Photographer"^^xsd:string .
+data:veryFamousPerson a vocab:Person ;
+    vocab:name "Very Famous Person"^^xsd:string .
 data:veryFamousPerson a vocab:Person .
