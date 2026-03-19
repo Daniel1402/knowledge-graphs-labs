@@ -1,0 +1,17 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# subclass reasoning
+{
+  ?x rdfs:subClassOf ?y .
+  ?a a ?x .
+} => {
+  ?a a ?y .
+} .
+
+# subproperty reasoning
+{
+  ?p rdfs:subPropertyOf ?q .
+  ?s ?p ?o .
+} => {
+  ?s ?q ?o .
+} .
