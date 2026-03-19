@@ -13,3 +13,35 @@ data:me a vocab:Student ;
                 <https://federickds.github.io/knowledge_graphs/data.ttl#me>.
 
 data:KnowledgeGraphs a vocab:Course .
+
+data:photo1 a vocab:Image ;
+    vocab:title "Self portrait"@en ;
+    vocab:creator data:me ;
+    vocab:depicts data:me ;
+    vocab:takenAt "Ugent Housing Facilities" ;
+    vocab:description "A photo of me in my current home." .
+
+data:photo2 a vocab:Image ;
+    vocab:title "Me and my family"@en ;
+    vocab:creator data:me ;
+    vocab:depicts data:me ,
+        data:myMom, 
+        data:myDad,
+        data:myBrother;
+    vocab:takenAt "My hometown in Germany" ;
+    vocab:description "A photo of me and my family back at home." .
+
+data:photo3 a vocab:Image ;
+    vocab:title "Famous Person"@en ;
+    vocab:creator data:starPhotographer ;
+    vocab:depicts data:veryFamousPerson ;
+    vocab:takenAt "A very famous place." ;
+    vocab:description "A famous photo of a famous person at a famous place." .
+
+
+data:myMom a vocab:Person .
+data:myDad a vocab:Person .
+data:myBrother a vocab:Student .
+
+data:starPhotographer a vocab:Person .
+data:veryFamousPerson a vocab:Person .

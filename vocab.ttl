@@ -53,3 +53,36 @@ pgs:knows a rdf:Property ;
     rdfs:range pgs:Person .
 
 
+pgs:Image a rdf:Class ;
+    rdfs:label "Image"@en ;
+    rdfs:comment "A photograph or visual image."@en .
+
+pgs:depicts a rdf:Property ;
+    rdfs:label "depicts"@en ;
+    rdfs:comment "indicates the person depicted in an image."@en ;
+    rdfs:domain pgs:Image ;
+    rdfs:range pgs:Person .
+
+pgs:title a rdf:Property ;
+    rdfs:label "title"@en ;
+    rdfs:comment "The title of an image."@en ;
+    rdfs:domain pgs:Image ;
+    rdfs:range xsd:string .
+
+pgs:description a rdf:Property ;
+    rdfs:label "description"@en ;
+    rdfs:comment "A description of an image"@en ;
+    rdfs:domain pgs:Image ;
+    rdfs:range xsd:String .
+    
+pgs:creator a rdf:Property ;
+    rdfs:label "creator"@en ;
+    rdfs:comment "The phptpgrapher or creator of an image"@en ;
+    rdfs:domain pgs:Image ;
+    rdfs:range pgs:Person .
+
+pgs:takenAt a rdf:Property ;
+    rdfs:label "takenAt"@en ;
+    rdfs:comment "The location where the image was taken"@en ;
+    rdfs:domain pgs:Image ;
+    rdfs:range xsd:string .
